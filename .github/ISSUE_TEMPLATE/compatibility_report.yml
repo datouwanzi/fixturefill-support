@@ -1,0 +1,91 @@
+name: Compatibility report
+description: Report behavior on a particular website, framework or control using synthetic data.
+title: "[Compatibility]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public report: do not include passwords, authentication credentials, personal information, confidential production data, private URLs, tokens, or sensitive screenshots.
+        A minimal synthetic example is preferable to a production page. Read KNOWN-ISSUES.md first; Shadow DOM, iframes and custom components have no dedicated support. Use SECURITY.md for security/privacy concerns.
+  - type: checkboxes
+    id: safe-report
+    attributes:
+      label: Safe disclosure
+      options:
+        - label: I have removed sensitive information from this report and any attachments.
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: FixtureFill version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and version
+    validations:
+      required: true
+  - type: input
+    id: framework
+    attributes:
+      label: Website or framework
+      description: Include a framework/version or a safe public test page. If the site is confidential, describe the technology without identifying it. No private URL is required.
+    validations:
+      required: true
+  - type: input
+    id: control
+    attributes:
+      label: Control type
+      description: Specify the native element or custom widget, and whether it is framework-controlled, if known.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Normal
+        - Edge
+        - Invalid
+    validations:
+      required: true
+  - type: input
+    id: seed
+    attributes:
+      label: Non-sensitive reproduction seed
+      description: Do not paste a sensitive original seed. Substitute synthetic text and state whether the issue still occurs.
+      placeholder: qa-demo-001
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: Compare the expected and actual results. For controlled inputs, note whether DOM and framework state agree after a re-render.
+    validations:
+      required: true
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      options:
+        - Every attempt
+        - Intermittent
+        - Once; not reproduced yet
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps or minimal example
+      description: Use an authorized test page and synthetic values. Redact any optional screenshots before uploading.
+    validations:
+      required: true

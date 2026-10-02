@@ -1,0 +1,91 @@
+name: Bug report
+description: Report a reproducible FixtureFill failure using non-sensitive test data.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public report: do not include passwords, authentication credentials, personal information, confidential production data, private URLs, tokens, or other sensitive information in this issue or screenshots.
+        Read SUPPORT.md and KNOWN-ISSUES.md first. For a security/privacy concern, follow SECURITY.md instead of posting details here.
+  - type: checkboxes
+    id: safe-report
+    attributes:
+      label: Safe disclosure
+      options:
+        - label: I have removed sensitive information from this report and any attachments.
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: FixtureFill version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      description: Include the exact Microsoft Edge, Chrome or other Chromium browser version.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and version
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Normal
+        - Edge
+        - Invalid
+    validations:
+      required: true
+  - type: input
+    id: seed
+    attributes:
+      label: Non-sensitive reproduction seed
+      description: Use a synthetic seed. If the original was sensitive, do not paste it; state whether a substitute reproduces the issue.
+      placeholder: qa-demo-001
+    validations:
+      required: true
+  - type: input
+    id: control
+    attributes:
+      label: Affected field or control
+      description: For example, textarea, select, radio, checkbox, contenteditable, or popup initialization.
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Website or framework (optional)
+      description: Share only if safe. A framework name/version or synthetic example is enough; omit private URLs.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include redacted error text if relevant. Do not attach raw browser logs containing private data.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give numbered steps on an authorized test page with synthetic data, and state how often it occurs.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Attach only a redacted screenshot. Remove sensitive values, identifying information and private address-bar URLs before uploading.

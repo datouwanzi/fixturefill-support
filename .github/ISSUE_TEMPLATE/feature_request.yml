@@ -1,0 +1,44 @@
+name: Feature request
+description: Propose an improvement for QA or development workflows.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public request: use synthetic examples. Do not include passwords, credentials, personal information, confidential production data, private URLs, tokens, or sensitive screenshots.
+        A request does not imply a planned feature or delivery commitment. For security/privacy concerns, follow SECURITY.md instead.
+  - type: checkboxes
+    id: safe-report
+    attributes:
+      label: Safe disclosure
+      options:
+        - label: I have removed sensitive information from this request and any attachments.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem being solved
+      description: Describe the QA/testing task and the obstacle, without confidential details.
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround
+      description: Describe what you do today, or write None.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the intended interaction and observable result.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Why it matters for QA/testing
+      description: Explain the testing benefit and how you would verify that the improvement works.
+    validations:
+      required: true

@@ -1,6 +1,6 @@
 # FixtureFill
 
-**FixtureFill — Deterministic Form Filler for QA** · Published by **Kivoraft** · Version **0.1.0**
+**FixtureFill** · Published by **Kynastro** · Version **0.1.2**
 
 FixtureFill is a Manifest V3 browser extension for repeatable form testing in Microsoft Edge and compatible Chromium browsers. It is intended for developers and QA engineers working on their own or authorized test pages.
 
@@ -10,7 +10,7 @@ The same seed, page identity, mode and field structure reproduce the same genera
 | --- | --- |
 | Normal | Generate typical synthetic values within supported native constraints. |
 | Edge | Exercise supported length limits, numeric bounds and Unicode handling. |
-| Invalid | Attempt missing or malformed values. Radio groups are preserved and skipped for safety in 0.1.0. |
+| Invalid | Attempt missing or malformed values. Radio groups are preserved and skipped for safety in 0.1.2. |
 
 FixtureFill runs locally, requires no account, and uses no telemetry, external API or remote code. It does not read or fill password fields and never submits forms automatically. Websites may independently react to field changes, including autosaving.
 

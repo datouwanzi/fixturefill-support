@@ -1,13 +1,13 @@
 # Privacy and data handling
 
-**Publisher:** Kivoraft  
-**Product:** FixtureFill — Deterministic Form Filler for QA  
-**Applies to:** Version 0.1.0  
-**Last updated:** October 3, 2026
+**Publisher:** Kynastro  
+**Product:** FixtureFill  
+**Applies to:** Version 0.1.2  
+**Last updated:** October 15, 2026
 
 ## Local operation
 
-FixtureFill does not collect personal data for Kivoraft, or transmit, sell or share personal data. It has no analytics or telemetry, requires no account, and uses no remote servers, external APIs (including AI APIs) or remote code. The extension does not send page content, generated values or settings to Kivoraft or another service.
+FixtureFill does not collect personal data for Kynastro, or transmit, sell or share personal data. It has no analytics or telemetry, requires no account, and uses no remote servers, external APIs (including AI APIs) or remote code. The extension does not send page content, generated values or settings to Kynastro or another service.
 
 Local-only does not mean that the extension never accesses page information. When explicitly invoked to fill a form, FixtureFill processes the current authorized page's field types, names, labels, options and constraints locally. It uses the page's origin, path and hash route to generate repeatable values; query parameters are excluded from that page identity. For local files, the path can affect the result. These details may contain personal or private information, so use authorized test pages and synthetic data.
 
@@ -37,4 +37,4 @@ FixtureFill does not request permanent access to all websites.
 
 ## Support reports
 
-This policy describes the extension. Information you deliberately submit to a GitHub issue is a separate support interaction: public issues and attachments can be read by Kivoraft and other people and are hosted by GitHub under [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Do not submit personal or sensitive information. Follow [SECURITY.md](SECURITY.md) for private security/privacy concerns and [SUPPORT.md](SUPPORT.md) for ordinary troubleshooting.
+This policy describes the extension. Information you deliberately submit to a GitHub issue is a separate support interaction: public issues and attachments can be read by Kynastro and other people and are hosted by GitHub under [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Do not submit personal or sensitive information. Follow [SECURITY.md](SECURITY.md) for private security/privacy concerns and [SUPPORT.md](SUPPORT.md) for ordinary troubleshooting.

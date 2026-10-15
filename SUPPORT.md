@@ -1,6 +1,6 @@
 # Support
 
-Applies to FixtureFill **0.1.0**, published by **Kivoraft**.
+Applies to FixtureFill **0.1.2**, published by **Kynastro**.
 
 ## Troubleshooting
 

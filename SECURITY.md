@@ -1,6 +1,6 @@
 # Security and privacy concerns
 
-This support repository covers **FixtureFill**, published by **Kivoraft**. The current release is **0.1.0**. Include the affected version in a report; this document does not promise response or remediation deadlines.
+This support repository covers **FixtureFill**, published by **Kynastro**. This documentation covers **0.1.2**. Include the affected version in a report; this document does not promise response or remediation deadlines.
 
 ## Report privately
 
@@ -8,7 +8,7 @@ Do not disclose a vulnerability, exploit details or sensitive information in a p
 
 If this repository's **Security → Advisories** page offers **Report a vulnerability**, use that private reporting channel. Its availability depends on the repository's private vulnerability reporting setting; this document alone does not enable it.
 
-If the private reporting option is unavailable, use a verified private Kivoraft support contact shown on the official extension listing. If neither channel is available, withhold technical details until a private channel is available. Do not guess an email address or send sensitive information to an unverified contact.
+If the private reporting option is unavailable, use a verified private Kynastro support contact shown on the official extension listing. If neither channel is available, withhold technical details until a private channel is available. Do not guess an email address or send sensitive information to an unverified contact.
 
 ## Information to include
 

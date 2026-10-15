@@ -12,7 +12,7 @@ The seed selects a repeatable data variant. Reuse a non-sensitive seed to reprod
 
 - **Normal:** typical synthetic data matched to supported fields and native constraints where possible.
 - **Edge:** supported length/numeric boundaries and Unicode values. It does not exercise every possible boundary.
-- **Invalid:** missing or malformed values where supported. Browser normalization or website logic may prevent some invalid values. All radio groups are preserved and skipped in 0.1.0.
+- **Invalid:** missing or malformed values where supported. Browser normalization or website logic may prevent some invalid values. All radio groups are preserved and skipped in 0.1.2.
 
 None of these modes guarantees that a website's custom business validation will accept or reject every generated value.
 
@@ -30,7 +30,7 @@ No. It never clicks a submit button or calls a form submission method. Website e
 
 ## Why was a radio group skipped in Invalid mode?
 
-Clearing a radio visually may leave a framework's internal value unchanged. FixtureFill 0.1.0 conservatively skips **all radio groups** in Invalid mode because controlled ownership cannot be reliably identified through the DOM. Their original state is preserved and the result reports the skip. Normal and Edge can still select radio options.
+Clearing a radio visually may leave a framework's internal value unchanged. FixtureFill 0.1.2 conservatively skips **all radio groups** in Invalid mode because controlled ownership cannot be reliably identified through the DOM. Their original state is preserved and the result reports the skip. Normal and Edge can still select radio options.
 
 ## Does it support React/Vue?
 
@@ -38,7 +38,7 @@ Common native controls managed by React/Vue are supported on a best-effort basis
 
 ## Does it support Shadow DOM or iframes?
 
-No. Version 0.1.0 targets the main document. It does not traverse shadow roots or fill iframe contents.
+No. Version 0.1.2 targets the main document. It does not traverse shadow roots or fill iframe contents.
 
 ## Why did a field remain unchanged?
 
